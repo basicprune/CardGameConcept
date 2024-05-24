@@ -32,5 +32,6 @@ public class BoardPlayer : MonoBehaviour
     {
         _manaText.text = "Mana: " + _mana.ToString() + " / " +  _manaTotal.ToString(); 
         _healthText.text = "Health: " + _health.ToString() + " / " +  _healthTotal.ToString(); 
+        // _healthText.text = "Health: " + _health.ToString() + " / " +  _healthTotal.ToString(); 
     }
 }

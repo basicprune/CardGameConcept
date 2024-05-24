@@ -7,6 +7,7 @@ public class PlaceCard : MonoBehaviour
 
     private Card _card;
     [SerializeField] private BoardPlayer _boardPlayer;   
+    [SerializeField] private SpawnPosition _spawnPosition;
 
    
 
@@ -29,6 +30,9 @@ public class PlaceCard : MonoBehaviour
             if (_boardPlayer._mana >= _card._manaCost)
             {
                 _boardPlayer._mana -= _card._manaCost;
+
+                _spawnPosition.SpawnEntity(_card._entityPrefab);
+
                 Debug.Log("card was placed");
 
             } else {

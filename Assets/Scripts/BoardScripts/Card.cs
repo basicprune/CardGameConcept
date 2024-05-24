@@ -9,7 +9,7 @@ public class Card : MonoBehaviour
     public int _attackDamage;
     public int _health;
     public string _ability = "";
-    public GameObject Prefab;
+    public GameObject _entityPrefab;
 
   
 }
